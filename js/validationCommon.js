@@ -76,7 +76,7 @@ function checkPriceRange(value) {
         return false;
     }
     value = value.toString().trim();
-    const regx = /^\s*([1-9]|[1-4]\d+\.\d{0,2})\s*$/;
+    const regx = /^\s*(([1-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9])+\.\d{1,2})\s*$/;
     return regx.test(value);
 }
 
