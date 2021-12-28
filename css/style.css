@@ -198,7 +198,7 @@ main .newMovies img {
   display: none;
 }
 
-.info.show {
+#info.show {
   display: block;
 }
 
@@ -328,7 +328,7 @@ main .newMovies img {
     color: transparent;
     width: 32px;
     height: 32px;
-    background-image: url(/images/details.png);
+    background-image: url(../images/details.png);
     margin: 5px;
   }
   .details:hover {
@@ -338,7 +338,7 @@ main .newMovies img {
     color: transparent;
     width: 32px;
     height: 32px;
-    background-image: url(/images/delete.png);
+    background-image: url(../images/delete.png);
     margin: 5px;
   }
   .delete:hover {
@@ -348,7 +348,7 @@ main .newMovies img {
     color: transparent;
     width: 32px;
     height: 32px;
-    background-image: url(/images/edit.png);
+    background-image: url(../images/edit.png);
     margin: 5px;
   }
   .edit:hover {
@@ -382,19 +382,19 @@ main .newMovies img {
   .delete {
     width: 20px;
     height: 20px;
-    background-image: url(/images/delete-sm.png);
+    background-image: url(../images/delete-sm.png);
     margin: 0;
   }
   .edit {
     width: 20px;
     height: 20px;
-    background-image: url(/images/edit-sm.png);
+    background-image: url(../images/edit-sm.png);
     margin: 0;
   }
   .details {
     width: 20px;
     height: 20px;
-    background-image: url(/images/details-sm.png);
+    background-image: url(../images/details-sm.png);
     margin: 0;
   }
 }
