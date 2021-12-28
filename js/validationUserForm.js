@@ -1,4 +1,7 @@
 function validateForm(){
+
+    const message = document.getElementById('info');
+
     const firstNameInput = document.getElementById('firstName');
     const lastNameInput = document.getElementById('lastName');
     const numberInput = document.getElementById('number');
@@ -75,13 +78,15 @@ function validateForm(){
         
     }
 
-
+    if(valid){
+        message.classList.remove('d-none');
+    }
     
     if (!valid) {
         errorsSummary.innerText = "Formularz zawiera błędy";
     }
     
-return valid;        
+return false;        
     
 }
 

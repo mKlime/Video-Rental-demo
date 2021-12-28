@@ -1,5 +1,7 @@
 function validateForm(){
 
+    const message = document.getElementById('info');
+
     const userInput = document.getElementById('user_id');
     const movieNameInput = document.getElementById('movi_id');
     const premiereInput = document.getElementById('premiere');
@@ -64,12 +66,15 @@ function validateForm(){
         dateToInput.classList.add("error-input");
         errorDateTo.innerText = "Data zwrotu powinna być późniejsza niż data wypożyczenia";
     }
-    
+    if(valid){
+        message.classList.remove('d-none');
+    }
+
     if (!valid) {
         errorsSummary.innerText = "Formularz zawiera błędy";
     }
     
-return valid;        
+return false;        
     
 }
 

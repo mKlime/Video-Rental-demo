@@ -1,7 +1,6 @@
 
 function validateForm() {
 
-    const form = document.querySelector('form');
     const message = document.getElementById('info');
 
     const movieNameInput = document.getElementById('movieName');
@@ -51,17 +50,14 @@ function validateForm() {
     }
     
     if(valid){
-        form.addEventListener('submit', (e) =>{
-            e.preventDefault();
-            message.classList.add('show');
-        });
+        message.classList.remove('d-none');
     }
 
     if (!valid) {
         errorsSummary.innerText = "Formularz zawiera błędy";
     }
     
-    return valid;     
+    return false;     
        
     
 }

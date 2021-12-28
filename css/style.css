@@ -194,14 +194,6 @@ main .newMovies img {
   grid-column: 1/2;
 }
 
-.info {
-  display: none;
-}
-
-#info.show {
-  display: block;
-}
-
 .btn-details, .btn-edit, .btn-delete {
   display: inline-block;
   width: 80px;
